@@ -45,6 +45,7 @@ if __name__ == '__main__':
 	carDict.update(mercedes)
 	print(carDict)
 
+	# using tuple as a key, keys must be immutable
 	rookie = ("Zion", "Williamson")
 	rookieDict = {rookie: "New Orleans Pelicans"}
 	print(rookieDict)
