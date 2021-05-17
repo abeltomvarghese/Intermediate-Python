@@ -4,78 +4,78 @@ from collections import OrderedDict
 from collections import defaultdict
 from collections import deque
 if __name__ == '__main__':
-    #Collections: Counter
+	#Collections: Counter
 
-    a = "aaaabbbcc"
-    my_counter = Counter(a)
-    print(my_counter)
-    print(my_counter.items())
-    print(my_counter.values())
-    print(my_counter.most_common(2)[0][0])
-    print(list(my_counter.elements()))
-
-
-    #Collections: NamedTuple
-    Name = namedtuple("Name", 'firstName,surname,sport')
-
-    michaelJordan = Name("Michael", "Jordan", "Basketball")
-    tomBrady = Name("Tom", "Brady", "American Football")
-    cristianoRonaldo = Name("Cristiano", "Ronaldo", "Football")
-
-    goatList = []
-    goatList.append(michaelJordan)
-    goatList.append(tomBrady)
-    goatList.append(cristianoRonaldo)
-
-    for fName,sName,sport in goatList:
-        print(f"Name: {fName} {sName} Sport: {sport}")
+	a = "aaaabbbcc"
+	my_counter = Counter(a)
+	print(my_counter)
+	print(my_counter.items())
+	print(my_counter.values())
+	print(my_counter.most_common(2)[0][0])
+	print(list(my_counter.elements()))
 
 
-    #Collections: Ordered Dictionary
+	#Collections: NamedTuple
+	Name = namedtuple("Name", 'firstName,surname,sport')
 
-    legendsDict = OrderedDict()
+	michaelJordan = Name("Michael", "Jordan", "Basketball")
+	tomBrady = Name("Tom", "Brady", "American Football")
+	cristianoRonaldo = Name("Cristiano", "Ronaldo", "Football")
 
-    legendsDict["NFL"] = tomBrady
-    legendsDict["EPL"] = cristianoRonaldo
-    legendsDict["NBA"] = michaelJordan
+	goatList = []
+	goatList.append(michaelJordan)
+	goatList.append(tomBrady)
+	goatList.append(cristianoRonaldo)
 
-    print(legendsDict)
+	for fName,sName,sport in goatList:
+		print(f"Name: {fName} {sName} Sport: {sport}")
 
-    #Collections: default dictionary
-    garage = defaultdict(str)
 
-    garage['luxury'] = "S-Class"
-    garage['family'] = "Range Rover"
-    garage['supercar'] = 'Aventador'
-    garage['legacy'] = 'SLR Mclaren'
-    garage['ultra-luxury'] = 'Phantom'
+	#Collections: Ordered Dictionary
 
-    print(garage)
-    print(garage['ultra-luxury'])
+	legendsDict = OrderedDict()
 
-    #Collections: Deque
-    nums = deque()
+	legendsDict["NFL"] = tomBrady
+	legendsDict["EPL"] = cristianoRonaldo
+	legendsDict["NBA"] = michaelJordan
 
-    nums.append(2)
-    nums.append(3)
+	print(legendsDict)
 
-    nums.appendleft(1)
+	#Collections: default dictionary
+	garage = defaultdict(str)
 
-    nums.extend([4,5,6])
-    nums.extendleft([0,-1,-2,-3,-4,-5])
+	garage['luxury'] = "S-Class"
+	garage['family'] = "Range Rover"
+	garage['supercar'] = 'Aventador'
+	garage['legacy'] = 'SLR Mclaren'
+	garage['ultra-luxury'] = 'Phantom'
 
-    print(nums)
+	print(garage)
+	print(garage['ultra-luxury'])
 
-    nums.pop();
-    print(nums)
+	#Collections: Deque
+	nums = deque()
 
-    nums.popleft()
-    print(nums)
+	nums.append(2)
+	nums.append(3)
 
-    # shifting all elements to the right
+	nums.appendleft(1)
 
-    nums.rotate(1)  #shifts the numbers in nums by 1 to the right
-    print(nums)
+	nums.extend([4,5,6])
+	nums.extendleft([0,-1,-2,-3,-4,-5])
 
-    nums.rotate(-1) #shifts the numbers in nums by 1 to the left
-    print(nums)
+	print(nums)
+
+	nums.pop();
+	print(nums)
+
+	nums.popleft()
+	print(nums)
+
+	# shifting all elements to the right
+
+	nums.rotate(1)  #shifts the numbers in nums by 1 to the right
+	print(nums)
+
+	nums.rotate(-1) #shifts the numbers in nums by 1 to the left
+	print(nums)
