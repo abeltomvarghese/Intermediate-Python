@@ -63,13 +63,14 @@ if __name__ == '__main__':
 		print(key, list(value))
 
 	#infinite cycles
-	for i in count(5):
-		print(i)
-		if i == 5:
-			break
-
-	for x in cycle(c):
-		print(x)
-
+	# for i in count(5):
+	# 	print(i)
+	# 	if i == 5:
+	# 		break
+	#
+	# for x in cycle(c):
+	# 	print(x)
+	#
 	for t in repeat(1,4): #prints out 1, four times
 		print(t)
+

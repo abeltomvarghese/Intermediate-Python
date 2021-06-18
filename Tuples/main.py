@@ -1,4 +1,3 @@
-
 if __name__ == '__main__':
 	goat = ("Tom Brady", 12, "quarterback", 6, "New England Patriots")
 
